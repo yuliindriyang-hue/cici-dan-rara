@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Rara & Cici</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <audio id="music" loop>
+    <source src="lagudj.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="petals" id="petals"></div>
+
+  <!-- HALAMAN PEMBUKA -->
+  <section class="opening" id="opening">
+    <div class="opening-content">
+      <p class="small-title">THE WEDDING OF</p>
+      <div class="ornament">✦ ❖ ✦</div>
+      <h1>Rara <span>&</span> Cici</h1>
+      <p class="opening-date">WEDDING INVITATION</p>
+
+      <div class="cover-photo">
+        <img src="rara.jpg" alt="Foto Rara dan Cici">
+      </div>
+
+      <p class="guest">Kepada Yth.</p>
+      <h3>Tamu Undangan</h3>
+      <p class="opening-desc">
+        Dengan penuh kebahagiaan, kami mengundang
+        Anda untuk hadir di hari istimewa kami.
+      </p>
+
+      <button onclick="openInvitation()" class="open-btn">
+        ✉ BUKA UNDANGAN
+      </button>
+    </div>
+  </section>
+
+  <!-- GERBANG -->
+  <div class="gate" id="gate">
+    <div class="gate-left">❖</div>
+    <div class="gate-right">❖</div>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <main id="main">
+
+    <section class="hero">
+      <p class="gold-text">THE WEDDING CELEBRATION</p>
+      <div class="hero-line"></div>
+
+      <h1>Rara <span>&</span> Cici</h1>
+
+      <p class="hero-desc">
+        Dua hati, satu tujuan, dan satu perjalanan
+        cinta yang akan dimulai selamanya.
+      </p>
+
+      <img src="cici.jpg" class="hero-image">
+
+      <p class="date-text">SAVE THE DATE</p>
+      <h2 id="weddingDateText">20 DESEMBER 2026</h2>
+    </section>
+
+    <!-- AYAT -->
+    <section class="quote section">
+      <div class="ornament">✦</div>
+      <p>
+        Dan di antara tanda-tanda kekuasaan-Nya
+        ialah Dia menciptakan pasangan hidup
+        agar kamu merasa tenteram.
+      </p>
+      <span>— QS. Ar-Rum: 21</span>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="couple section">
+      <p class="gold-text">THE BRIDE & GROOM</p>
+      <h2>Assalamu'alaikum</h2>
+
+      <div class="couple-card">
+        <img src="rara.jpg">
+        <h1>Rara</h1>
+        <p>Putri dari keluarga tercinta</p>
+      </div>
+
+      <div class="and">&</div>
+
+      <div class="couple-card">
+        <img src="cici.jpg">
+        <h1>Cici</h1>
+        <p>Putri dari keluarga tercinta</p>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown section">
+      <p class="gold-text">COUNTING THE DAYS</p>
+      <h2>Menuju Hari Bahagia</h2>
+
+      <div class="timer">
+        <div><strong id="days">00</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+    </section>
+
+    <!-- ACARA -->
+    <section class="event section">
+      <p class="gold-text">WEDDING EVENT</p>
+      <h2>Rangkaian Acara</h2>
+
+      <div class="event-card">
+        <div class="event-icon">❖</div>
+        <h2>Akad Nikah</h2>
+        <p>Minggu, 20 Desember 2026</p>
+        <p>Pukul 08.00 WIB - Selesai</p>
+        <div class="line"></div>
+        <p>Tempat acara pernikahan</p>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">✦</div>
+        <h2>Resepsi</h2>
+        <p>Minggu, 20 Desember 2026</p>
+        <p>Pukul 11.00 WIB - Selesai</p>
+        <div class="line"></div>
+        <p>Tempat acara pernikahan</p>
+      </div>
+
+      <a href="https://maps.google.com/" target="_blank"
+         class="maps-btn">LIHAT LOKASI</a>
+    </section>
+
+    <!-- GALERI -->
+    <section class="gallery section">
+      <p class="gold-text">OUR MOMENTS</p>
+      <h2>Galeri Cinta</h2>
+      <div class="gallery-image">
+        <img src="rara.jpg">
+      </div>
+      <p class="gallery-desc">
+        Setiap momen menjadi cerita indah
+        dalam perjalanan cinta kami.
+      </p>
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp section">
+      <p class="gold-text">WEDDING RSVP</p>
+      <h2>Konfirmasi Kehadiran</h2>
+
+      <input id="guestName" type="text"
+        placeholder="Nama Anda">
+
+      <select id="attendance">
+        <option value="Hadir">Saya akan hadir</option>
+        <option value="Tidak hadir">Maaf, belum bisa hadir</option>
+      </select>
+
+      <button onclick="sendRSVP()" class="open-btn">
+        KIRIM KONFIRMASI
+      </button>
+    </section>
+
+    <!-- PENUTUP -->
+    <footer>
+      <div class="ornament">✦ ❖ ✦</div>
+      <h1>Rara <span>&</span> Cici</h1>
+      <p>Terima kasih atas doa dan restunya.</p>
+      <p class="gold-text">WITH LOVE ♡</p>
+      <small>© 2026 Wedding Invitation</small>
+    </footer>
+
+  </main>
+
+  <button class="music-btn" id="musicBtn"
+    onclick="toggleMusic()">♫</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
